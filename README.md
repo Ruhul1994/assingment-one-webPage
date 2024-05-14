@@ -1,1 +1,1 @@
-### This is first project in Hablu programming. this project tyme was 48 houre.
+### This is the first project in Hablu programming. this project time was 48 hours.
