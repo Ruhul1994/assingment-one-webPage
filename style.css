@@ -1,0 +1,470 @@
+*{
+ box-sizing: border-box;
+ --font: "Inter", sans-serif;
+ --bcolor: #F8F8F8;
+}
+.first-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+.logo-img {
+    max-height: 2rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+.manu-page-link {
+    margin-top: .2rem;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+         list-style-type: none;
+         font-family: var(--font);
+         font-weight: 500;
+         line-height: 26.63px;
+      
+}
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   .button-section :nth-child(1){
+    font-family: var(--font);
+    background: #F1F1F1;
+    font-size: 1rem;
+    border-radius: 1em;
+    border: none;
+    padding: .50em .70em;
+    cursor: pointer;
+  }
+
+  .button-section :nth-child(1):hover {
+    text-decoration: underline;
+    text-decoration-color: #00EBC7;
+  }
+
+  .button-section :nth-child(1):active {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .button-section :nth-last-child(2){
+    font-family: var(--font);
+    background-color: #000;
+    color: #F1F1F1;
+    border-radius: 1em;
+    font-size: 1rem;
+    padding: .50em .90em;
+    cursor: pointer;
+    border: none;
+  }
+
+  .button-section :nth-last-child(2):hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .button-section :nth-last-child(2):active{
+    color: #88ff00;
+    padding: .5rem .88rem;
+  }
+
+  .button-section :nth-child(3){
+    max-width: 2rem;
+  }
+ .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+ }
+ .background-pic {
+    position: relative;
+    & img {
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        }
+ }
+ .form-section {
+    background-color: #fff;
+    border: .10em solid gainsboro;
+    position: absolute;
+    border-radius: .3em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: var(--font);
+}
+.select-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin:1em 1em;
+    margin-top: 0;
+    & select {
+        background: #ECECEC;
+        border: none;
+        padding: .5em;
+        border-radius: .1em;
+}
+
+}
+
+    .button-division {
+       display: flex;
+       gap: 1rem;
+       margin-bottom: 2rem;
+    }
+
+  .button-division :nth-child(1){
+        border: none;
+        padding: .3rem 6rem;
+        border-radius: .2rem;
+        cursor: pointer;
+       }
+       .button-division :nth-child(2){
+        border: none;
+        padding: .3rem 1rem;
+        border-radius: 2rem;
+        background: #00EBC7;
+        cursor: pointer;
+       }
+       .button-division :nth-child(2):hover {
+        font-size: medium;
+        font-weight: 600;
+       }
+
+       .button-division :nth-child(2):active {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+        color: #F1F1F1;
+       }
+    
+.Zapper {
+    position: absolute;
+    bottom: .01em;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    text-decoration: underline;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.Zapper:hover {
+    text-decoration-color:rgb(0, 255, 213);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+.Zapper:active {
+    color:#00EBC7;
+}
+
+.company-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background: #FDE24F;
+   margin-top: -4px;
+   font-family: var(--font);
+   font-size: .7rem;
+   & img {
+    width: 70%;
+    margin-bottom: 1.5rem;
+   };
+}
+.buy-sel-para {
+    font-style: italic;
+    font-weight:normal;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*  By / sell divided section */
+
+.container {
+    background-color: var(--bcolor);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & button {
+        background: transparent;
+        border-radius: 1em;
+        border: 1px solid black;
+        padding: .20rem .65rem;
+        cursor: pointer;
+        margin-left: 45%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    & button:hover {
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+    }
+    & button:active {
+        color: #00EBC7;
+        padding: .1rem .50rem;
+    }
+}
+
+.hading-one {
+    margin-top: 2rem;
+    font-weight:normal ;
+
+    & h2 {
+        font-weight:normal;
+        margin-left: 2rem;
+        font-size: large;
+    }
+}
+
+.main-para {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+
+    & .paragraph {
+        font-weight: 400;
+        text-align: center;
+        color: #535353;
+        
+    }
+}
+
+.secured-para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+
+    & h4 {
+        text-decoration: underline;
+    }
+}
+
+.horizontal-align{
+    width: 6rem;
+    border-top: 1px solid black;
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+/* by and sell and color part */
+
+.buy-sell-offer {
+background-color: var(--bcolor);
+font-family: var(--font);
+display: flex;
+gap: 2rem;
+justify-content: space-evenly;
+
+& h2{
+    font-weight: normal;
+}
+
+& img {
+    width:3rem;
+}
+
+& .vertical-line {
+    border-left: .1em solid black;
+    margin-top: -.5rem;
+    margin-bottom: -.5rem;
+}
+& .color {
+ display: flex;
+ gap: 1rem;
+ justify-items:center;
+ justify-content: space-evenly;
+ border: 1px solid  #000000;
+ border-radius: .6rem;
+ align-items: center;
+ padding: .2rem .2rem;
+}
+& button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+}
+& button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+& button:active {
+    color: #ffff00;
+    padding: .5rem .7rem;
+}
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Sign up section */
+
+.sign-up {
+background: #CFBAFF;
+display: flex;
+flex-direction: column;
+align-items: center;
+font-family: var(--font);
+font-weight: 500;
+font-size: 3rem;
+margin-top: -.4rem;
+
+& button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: medium;
+}
+& button:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+& button:active {
+    color: #88ff00;
+    padding: .5rem 1rem;
+}
+    
+}
+
+/* footer section design */
+
+.footer {
+    font-family: var(--font);
+    color: #ffffff;
+    background-color: #000000;
+    padding-top: 2rem;
+}
+.footer-all {
+    display: flex;
+    flex-direction: column;
+}
+.all-ul-section {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+
+ & img {
+    margin-top: 1.6rem;
+    margin-right: 4rem;
+    width: 7rem;
+
+ }
+}
+
+.ul-section {
+    & h2{
+      margin-right: 5rem;  
+    }
+    
+}
+
+.last-para {
+    font-size: .7rem;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+  
+/* for responsive design */
+
+@media (max-width:767px){
+
+    .first-div {
+        flex-direction: column; 
+        
+        & .logo-img {
+            max-width: 12rem;
+            margin-left: .5rem;
+    }
+    & .manu-page-link {
+        margin-top: -1rem;
+        margin-left: -2rem;
+        margin-right: 1rem;
+
+       & ul {
+            display: flex;
+          
+    }
+    }
+}
+.button-section {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   }
+   .form-section {
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+.container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.horizontal-align{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: .4rem;
+}
+.buy-sell-offer {
+    flex-direction: column;
+    margin: 1rem;
+    
+    & button {
+        margin-left: 9rem;
+    }
+}
+
+.sign-up {
+    padding-left: 2rem;
+    padding-right: .5rem;
+    font-size: 2.5rem;
+}
+.all-ul-section {
+    display: inline;
+    text-align: center;
+    & img {
+        padding-left: 3rem;
+        height: 2rem;
+        width: 9rem;
+    }
+}
+.last-para {
+    font-size: .2rem;
+    padding-bottom: 1rem;
+}
+.ul-section {
+    
+    & h2 {
+    margin-left: 5rem;
+    }
+}
+
+}
